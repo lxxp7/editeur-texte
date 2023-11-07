@@ -31,4 +31,10 @@ public class Document {
         texte = leftPart + remplacement + rightPart;
     }
 
+
+    public void majuscules(int start, int end) {
+        String changer=texte.substring(start,end);
+        String chanegement=changer.toUpperCase();
+        remplacer(start,end,chanegement);
+    }
 }
