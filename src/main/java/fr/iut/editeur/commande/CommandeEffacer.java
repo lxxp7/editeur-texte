@@ -19,4 +19,12 @@ public class CommandeEffacer extends CommandeDocument{
         this.document.effacer(start,end);
         super.executer();
     }
+
+
+
+    @Override
+    public void getDescriptionCommande() {
+        System.out.println("Sert à effacer un morceau de texte -> Format attendu : effacer;start;end");
+    }
+
 }
