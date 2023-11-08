@@ -7,7 +7,7 @@ public class CommandeEffacer extends CommandeDocument{
     public CommandeEffacer(Document document, String[] parameters) {
         super(document, parameters);
     }
-
+    
     @Override
     public void executer() {
         if(parameters.length < 3) {
