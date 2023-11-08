@@ -44,6 +44,9 @@ public class Document {
     public void clear(int start,int end){
         effacer(start,end);
     }
+    public void inserer(int start,String ajout){
+        remplacer(start,start,ajout);
+    }
 
 
 }
