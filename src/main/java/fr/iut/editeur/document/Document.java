@@ -47,6 +47,10 @@ public class Document {
     public void inserer(int start,String ajout){
         remplacer(start,start,ajout);
     }
-
+    public void minuscule(int start, int end) {
+        String changer=texte.substring(start,end);
+        String chanegement=changer.toLowerCase();
+        remplacer(start,end,chanegement);
+    }
 
 }
