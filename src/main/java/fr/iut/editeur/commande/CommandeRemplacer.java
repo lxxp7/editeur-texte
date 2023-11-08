@@ -22,4 +22,10 @@ public class CommandeRemplacer extends CommandeDocument {
         super.executer();
     }
 
+
+    @Override
+    public void getDescriptionCommande() {
+        System.out.println("Sert à remplacer un morceau de texte -> Format attendu : remplacer;start;end;texte");
+    }
+
 }

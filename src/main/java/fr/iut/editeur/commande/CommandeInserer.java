@@ -21,4 +21,9 @@ public class CommandeInserer extends CommandeDocument {
         super.executer();
     }
 
+    @Override
+    public void getDescriptionCommande() {
+        System.out.println("Sert à insérer du texte à une position choisie -> Format attendu : inserer;start;texte");
+    }
+
 }

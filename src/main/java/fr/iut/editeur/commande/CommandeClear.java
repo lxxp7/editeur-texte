@@ -21,4 +21,10 @@ public class CommandeClear extends CommandeDocument{
         this.document.clear(start,end);
         super.executer();
     }
+
+
+    @Override
+    public void getDescriptionCommande() {
+        System.out.println("Sert à supprimer tout le texte -> Format attendu : clear;");
+    }
 }
