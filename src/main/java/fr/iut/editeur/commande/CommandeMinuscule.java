@@ -20,5 +20,10 @@ public class CommandeMinuscule extends CommandeDocument{
         super.executer();
     }
 
+    @Override
+    public void getDescriptionCommande() {
+        System.out.println("Sert à mettre un morceau de texte en minuscule -> Format attendu : minuscule;start;end");
+    }
+
 }
 
