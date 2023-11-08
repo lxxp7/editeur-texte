@@ -41,5 +41,10 @@ public class Document {
         remplacer(start,end,"");
     }
 
+    public void clear(int start,int end){
+        effacer(start,end);
+        ajouter("bug");
+    }
+
 
 }
