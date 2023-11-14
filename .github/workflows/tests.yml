@@ -2,15 +2,13 @@
   on: push
   jobs:
     job1:
-      runs-on: ubuntu-latest #Tourne sur une VM ubuntu
-      steps: #Etapes à réaliser sur le système
-        #On se place dans le dépôt...
+      runs-on: ubuntu-latest
+      steps:
           - name: Checkout
             uses: actions/checkout@v3
-              #Suite des actions...
           - name: Setup
             uses: actions/setup-java@v1
             with :
-              param1:java-version: 17
+              param1: java-version:17
           - name: Tests
-            uses : mvn test
+            uses : mvn
