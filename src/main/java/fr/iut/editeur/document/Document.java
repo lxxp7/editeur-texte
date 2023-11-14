@@ -21,16 +21,34 @@ public class Document {
         return this.texteDocument;
     }
 
+
+    /**
+     * sert à ajouter un texte à l'éditeur
+     * @param texte : texte que vous voulez ajouter
+     */
     public void ajouter(String texte) {
         this.texteDocument += texte;
     }
 
+
+    /**
+     * sert à remplacer les caractères de l'index start à l'index fin par remplacement
+     * @param start indice de début
+     * @param end indice de fin
+     * @param remplacement string par lequel remplacer
+     */
     public void remplacer(int start, int end, String remplacement) {
         String leftPart = texteDocument.substring(0, start);
         String rightPart = texteDocument.substring(end);
         texteDocument = leftPart + remplacement + rightPart;
     }
 
+
+    /**
+     * sert à mettre un texte en majuscule
+     * @param start index de début
+     * @param end index de fin
+     */
     public void majuscules(int start, int end) {
         String changer=texteDocument.substring(start,end);
         String chanegement=changer.toUpperCase();
