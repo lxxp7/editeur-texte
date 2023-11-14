@@ -11,4 +11,4 @@
             with :
               param1: java-version:17
           - name: Tests
-            uses : mvn
+            uses : mvn test
