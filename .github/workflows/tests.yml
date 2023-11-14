@@ -4,11 +4,11 @@
     job1:
       runs-on: ubuntu-latest
       steps:
-          - name: Checkout
-            uses: actions/checkout@v3
-          - name: Setup
-            uses: actions/setup-java@v1
+          - name : Checkout
+            uses : actions/checkout@v3
+          - name : Setup
+            uses : actions/setup-java@v1
             with :
-              param1: java-version:17
-          - name: Tests
-            uses : mvn test
+                  java-version: 20
+          - name : Tests
+            run : mvn test
