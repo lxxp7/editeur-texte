@@ -74,6 +74,7 @@ public class Document {
         effacer(start,end);
     }
 
+
     /**
      * insere du texte à partir de start
      * @param start
