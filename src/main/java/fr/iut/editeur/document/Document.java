@@ -55,16 +55,39 @@ public class Document {
         remplacer(start,end,chanegement);
     }
 
+
+    /**
+     * sert à effacer un texte
+     * @param start
+     * @param end
+     */
     public void effacer(int start, int end) {
         remplacer(start,end,"");
     }
 
+    /**
+     * efface tout le texte
+     * @param start
+     * @param end
+     */
     public void clear(int start,int end){
         effacer(start,end);
     }
+
+    /**
+     * insere du texte à partir de start
+     * @param start
+     * @param ajout
+     */
     public void inserer(int start,String ajout){
         remplacer(start,start,ajout);
     }
+
+    /**
+     * mets le texte en minuscule
+     * @param start
+     * @param end
+     */
     public void minuscule(int start, int end) {
         String changer=texteDocument.substring(start,end);
         String chanegement=changer.toLowerCase();
