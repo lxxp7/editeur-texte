@@ -19,4 +19,9 @@ public class CommandeMinuscule extends CommandeDocument{
         this.document.minuscules(start,end);
         super.executer();
     }
+
+    @Override
+    public String getDescriptionCommande() {
+        return "Met en minuscule une partie du texte du document";
+    }
 }
