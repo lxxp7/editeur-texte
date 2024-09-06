@@ -31,6 +31,12 @@ public class Document {
         remplacer(debut,fin,partieGauche.toUpperCase());
     }
 
+    public void inserer(int position, String texte) {
+        String partieGauche = this.texte.substring(0, position);
+        String partieDroite = this.texte.substring(position);
+        this.texte = partieGauche + texte + partieDroite;
+    }
+
     public void effacer(int start, int end) {
         remplacer(start,end,"");
     }
