@@ -13,4 +13,9 @@ public class CommandeClear extends CommandeDocument {
         this.document.clear();
         super.executer();
     }
+
+    @Override
+    public String getDescriptionCommande() {
+        return "Efface le texte du document";
+    }
 }
