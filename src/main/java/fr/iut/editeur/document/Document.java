@@ -2,43 +2,43 @@ package fr.iut.editeur.document;
 
 public class Document {
 
-    private String texte;
+    private String contentDocument;
 
     public Document() {
-        this.texte = "";
+        this.contentDocument = "";
     }
 	
-    public String getTexte() {
-        return texte;
+    public String getContentDocument() {
+        return contentDocument;
     }
 
-    public void setTexte(String texte) {
-        this.texte = texte;
+    public void setContentDocument(String contentDocument) {
+        this.contentDocument = contentDocument;
     }
 
     public void ajouter(String texte) {
-        this.texte += texte;
+        this.contentDocument += texte;
     }
 
     public void remplacer(int debut, int fin, String remplacement) {
-        String partieGauche = texte.substring(0, debut);
-        String partieDroite = texte.substring(fin + 1);
-        texte = partieGauche + remplacement + partieDroite;
+        String partieGauche = contentDocument.substring(0, debut);
+        String partieDroite = contentDocument.substring(fin + 1);
+        contentDocument = partieGauche + remplacement + partieDroite;
     }
 
     public void majuscules(int debut, int fin) {
-        String partieGauche = texte.substring(debut,fin + 1);
+        String partieGauche = contentDocument.substring(debut,fin + 1);
         remplacer(debut,fin,partieGauche.toUpperCase());
     }
 
     public void inserer(int position, String texte) {
-        String partieGauche = this.texte.substring(0, position);
-        String partieDroite = this.texte.substring(position);
-        this.texte = partieGauche + texte + partieDroite;
+        String partieGauche = this.contentDocument.substring(0, position);
+        String partieDroite = this.contentDocument.substring(position);
+        this.contentDocument = partieGauche + texte + partieDroite;
     }
 
     public void minuscules(int debut, int fin) {
-        String partieGauche = texte.substring(debut,fin + 1);
+        String partieGauche = contentDocument.substring(debut,fin + 1);
         remplacer(debut,fin,partieGauche.toLowerCase());
     }
 
@@ -47,11 +47,11 @@ public class Document {
     }
 
     public void clear() {
-        texte = "";
+        contentDocument = "";
     }
 
     @Override
     public String toString() {
-        return this.texte;
+        return this.contentDocument;
     }
 }
