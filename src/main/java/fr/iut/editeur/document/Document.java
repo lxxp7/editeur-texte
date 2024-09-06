@@ -37,6 +37,11 @@ public class Document {
         this.texte = partieGauche + texte + partieDroite;
     }
 
+    public void minuscules(int debut, int fin) {
+        String partieGauche = texte.substring(debut,fin + 1);
+        remplacer(debut,fin,partieGauche.toLowerCase());
+    }
+
     public void effacer(int start, int end) {
         remplacer(start,end,"");
     }
