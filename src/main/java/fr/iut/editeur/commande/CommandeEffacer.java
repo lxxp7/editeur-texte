@@ -11,7 +11,7 @@ public class CommandeEffacer extends CommandeDocument{
     @Override
     public void executer() {
         if(parameters.length < 3) {
-            System.err.println("Format attendu : effacer;start;end");
+            System.err.println("Formsat attendu : effacer;start;end");
             return;
         }
         int start= Integer.parseInt(parameters[1]);
