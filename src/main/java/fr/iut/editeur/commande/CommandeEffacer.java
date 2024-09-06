@@ -19,4 +19,9 @@ public class CommandeEffacer extends CommandeDocument{
         this.document.effacer(start,end);
         super.executer();
     }
+
+    @Override
+    public String getDescriptionCommande() {
+        return "Efface une partie du texte du document";
+    }
 }

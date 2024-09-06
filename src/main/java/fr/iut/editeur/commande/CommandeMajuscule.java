@@ -20,5 +20,10 @@ public class CommandeMajuscule extends CommandeDocument{
         super.executer();
     }
 
+    @Override
+    public String getDescriptionCommande() {
+        return "Met en majuscule une partie du texte du document";
+    }
+
 }
 
