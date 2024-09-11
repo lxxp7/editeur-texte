@@ -22,8 +22,8 @@ jobs:
           java-version: '17'
           distribution: 'oracle'
 
-      - name: Mvn versions set
-        run: mvn versions:set -DnewVersion= ${{ github.ref_name }} -DgenerateBackupPoms=false
+      - name: Set project version based on tag
+        run: mvn versions:set -DnewVersion=${{ github.ref_name }} -DgenerateBackupPoms=false
 
       - name: Build with Maven
         run: mvn package
