@@ -44,7 +44,7 @@ public class DocumentTest {
     @Test
     public void testInserer() {
         document.ajouter("Bonjour monde");
-        document.inserer(7, " le ");
+        document.inserer(7, " le");
         assertEquals("Bonjour le monde", document.gettexteDocument(), "L'insertion n'est pas correcte");
     }
 
